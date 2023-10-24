@@ -1,9 +1,9 @@
-
+require('dotenv').config();
 const express = require('express');
 const server = express();
 const port = 3000;
 const pool = require('./db/pgClient');
-require('dotenv').config();
+
 const {
     getAllUsers
     } = require('./controllers/userControllers');
